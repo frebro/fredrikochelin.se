@@ -1,0 +1,12 @@
+{
+  "name": "fredrikochelin-se",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "normalize-opentype.css": "~0.2.3",
+    "normalize.css": "~3.0.2",
+    "jquery-horunge": "~0.0.6"
+  }
+}

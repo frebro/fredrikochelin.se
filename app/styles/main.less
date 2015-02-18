@@ -1,0 +1,102 @@
+@color-bg:            #ec0044;
+@color-text:          #fcfcfc;
+@color-links:         @color-text;
+
+@margin-small:       20px;
+@margin-default:     40px;
+@margin-large:       80px;
+
+* {   box-sizing: border-box; }
+
+a {
+  color: @color-links;
+  text-decoration: underline;
+}
+
+body {
+  background-color: @color-bg;
+  color: @color-text;
+
+  font-family: 'Montana-Regular', sans-serif;
+
+  padding: @margin-large @margin-default;
+}
+
+.main {
+  font-size: 36px;
+  // text-align: center;
+
+  width: 14em;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  width: 100%;
+  height: auto;
+}
+
+.separator {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: @margin-default auto;
+}
+
+.newsletter .email,
+.newsletter .submit {
+  background-color: white;
+  color: @color-bg;
+  border: none;
+  border-radius: .5em;
+
+  display: inline-block;
+  padding: .5em .5em;
+  font-size: 24px;
+}
+
+.newsletter .email {
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.075);
+}
+
+.newsletter .submit {
+}
+
+.separator-1 {
+  width: 6em;
+}
+
+.separator-2 {
+  width: 2em;
+}
+
+.signature {
+  width: 8em;
+  margin-top: @margin-large;
+}
+
+.corner {
+  width: 60px;
+  height: auto;
+  position: fixed;
+}
+.corner.corner-tr {
+  top: @margin-small;
+  right: @margin-small;
+  transform: rotate(90deg);
+}
+.corner.corner-tl {
+  top: @margin-small;
+  left: @margin-small;
+}
+.corner.corner-br {
+  bottom: @margin-small;
+  right: @margin-small;
+  transform: rotate(-180deg);
+}
+.corner.corner-bl {
+  bottom: @margin-small;
+  left: @margin-small;
+  transform: rotate(-90deg);
+}
